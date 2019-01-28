@@ -1,0 +1,25 @@
+<html>
+<body>
+<form action="http://localhost:5000/" method="POST">
+    <table cellspacing=24>
+        <tr>
+            <td>
+                <p>Search string <input type="text" name="search" onchange="this.form.submit()"/></p>
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p><textarea rows="40" cols="50" name="text" style="width: 400px; height: 400px;">{{ text }}</textarea></p>
+            </td>
+            <td style="vertical-align: top; text-align: justify">
+                <div style="width: 400px; height: 400px;">
+                    <p>{{ highlighted_text }}</p>
+                </div>
+            </td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>
