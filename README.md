@@ -3,25 +3,39 @@ Highlighter
 
 Sample Python application that demonstrate the possibility to find and mark text sequence in web page
 
-## How to run
-To run highlighter app:
+## Install dependencies
+To install dependencies run:
 ```buildoutcfg
-python main.py
+pip install -r requirements.txt
+```
+
+## Install package
+To install highlighter:
+```buildoutcfg
+pip install -e .
+```
+
+## How to run
+To run highlighter app (On Windows use **set** instead of **export**):
+```buildoutcfg
+export FLASK_APP=highlighter
+flask run
 ```
 
 then go to [localhost:5000](localhost:5000)
 
+![image](example.png)
 ## Tests
 The application contains tests. To run tests:
 ```buildoutcfg
-pytest tests
+pytest -v
 ```
 
 ## Code style check
 Code **must** satisfy [PEP008](https://www.python.org/dev/peps/pep-0008/) code style requirements
 
 ```buildoutcfg
-pylint .
+pylint -r y **/*.py
 ```
 ## TODO
 
@@ -31,10 +45,10 @@ pylint .
  git pull
  git checkout -b dev
 ```
- - Add an implementation to methods in the **main.py** module that covers the demands
+ - Add an implementation to methods in the **\_\_init__.py** module that covers the demands
     - markup_text
     - highlight_text
- - Add tests to the implemented methods in the **tests/highlighter_test.py** module
+ - Add tests to the implemented methods in the **tests/test_highlighter.py** module. You can find examples of tests on [Flask testing howto](http://flask.pocoo.org/docs/1.0/testing/) page.
  - Run tests
  - Run code check
  - Commit and push your local changes to the remote **git** repository. You can do it either via Pycharm view (**Ctrl + K**) or via terminal 
