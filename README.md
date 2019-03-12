@@ -16,7 +16,7 @@ Sample Python application that demonstrate the possibility to find and mark text
 
 Before to go you should set up your local environment.
 
-- Fork repository by clicking the **Fork** button on the upper right-hand side of the repository’s page. See an example [here](https://help.github.com/en/articles/fork-a-repo#fork-an-example-repository)
+- Fork repository by clicking the **Fork** button on the upper right-hand side of the repository’s page. See an example [here](https://help.github.com/en/articles/fork-a-repo#fork-an-example-repository) **NOTE!** All actions described below **MUST** be applied to the **!!!FORKED!!!** repository!!!
 - Clone forked repository to your local system ([hint](https://help.github.com/en/articles/fork-a-repo#step-2-create-a-local-clone-of-your-fork)).
 - Go to the project' directory
 
@@ -67,6 +67,8 @@ pylint -r y **/*.py
 
 **NOTE**
 Before to start your work you must should perform all steps described in [Before you go](#before-you-go) section.
+
+<span style="color:red">**CAUTION** All actions described below **MUST** be applied to the **!!!FORKED!!!** repository!!!</span>
 
 Next, perform steps below:
 
