@@ -41,6 +41,7 @@ pip install -e .
 
 ## How to run
 
+Before to run your app, make sure you are in the project directory, e.g., **dir** (i.e., **ls** in Mac OS / Linux) must return **highlighter** as a subdirectory.
 To run highlighter app (On Windows use **set** instead of **export**):
 ```buildoutcfg
 export FLASK_APP=highlighter
