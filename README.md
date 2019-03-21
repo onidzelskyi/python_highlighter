@@ -69,6 +69,14 @@ pylint -r y **/*.py
 Before to start your work you must should perform all steps described in [Before you go](#before-you-go) section.
 
 <span style="color:red">**CAUTION** All actions described below **MUST** be applied to the **!!!FORKED!!!** repository!!!</span>
+Make sure, your **local** repository refers to the **your remote** repo.
+```bash
+git remote show origin
+```
+should return an address that **differs** from parent below
+```bash
+https://github.com/onidzelskyi/python_highlighter.git
+```
 
 Next, perform steps below:
 
@@ -89,7 +97,8 @@ Next, perform steps below:
 git commit -a -m 'type your commit message here'
 git push origin dev
 ```
- - Create **MR** (merge request). See how to do it [here](https://docs.gitlab.com/ee/gitlab-basics/add-merge-request.html)
- - Add @onidzelskyi as a collaborator with write access rights.
+ - Create **PR** (pull request). See how to do it [here](https://docs.gitlab.com/ee/gitlab-basics/add-merge-request.html)
+ **Note** Make sure the target branch is **your** master, not parent.
+ - Add two or more peers as a collaborator with write access rights.
  - Send the link to the **MR** to your reviewer
  
