@@ -32,7 +32,10 @@ def create_app():
         This is supplementary method that helps you to wrap marked text in tags.
         @:param text - string text to be marked
         @:return marked text, e.g., <mark>highlighted text</mark>."""
-        result = "<mark>" + text + "</mark>"
+        result = text
+
+        # TODO: add an implementation
+
         return result
 
     def highlight_text(text, expr):
@@ -40,9 +43,10 @@ def create_app():
         @:param text - string text to be processed (e.g., 'The sun in the sky')
         @:param expr - string pattern to be searched in the text (e.g., 'th')
         @:return marked text, e.g., "<mark>Th</mark>e sun in <mark>th</mark>e sky"."""
-        if expr in text:
-            text = text.replace(expr, markup_text(expr))
         result = text
+
+        # TODO: add an implementation
+
         return result
 
     return app
